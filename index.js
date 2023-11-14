@@ -16,12 +16,30 @@ app.get("/events", (req, res) => {
             const page = await browser.newPage();
             await page.goto(`https://www.eventbrite.co.uk/o/rise-london-16793628230`);
             
-            const grabTitle = await page.evaluate(() => {
-                const eventTitle = document.querySelector(".card-text--truncated__one")
-                return eventTitle.innerText;
-            })
-            console.log(grabTitle);
-            res.send(grabTitle)
+            const grabEvent = await page.evaluate(() => {      
+                const eventsDetails = document.querySelectorAll(".eds-structure__main")
+                let eventsArr = [];
+                eventsDetails.forEach(event => { 
+                const eventTitle = event.querySelector(".eds-event-card__formatted-name--is-clamped");
+                const eventDate = event.querySelector(".eds-event-card-content__sub-title");
+                const eventLocation = event.querySelector(".card-text--truncated__one");
+                const eventFee = "Free";
+                const eventImage = event.querySelector("img").getAttribute("src");
+                
+                const data = {
+                    title: eventTitle === null ? "nothing": eventTitle.innerText,
+                    date: eventDate === null ? "nothing" : eventDate.innerText,
+                    location: eventLocation === null ? "nothing" : eventLocation.innerText,
+                    fee: eventFee,
+                    image: eventImage === null ? "nothing" : eventImage
+                }
+                
+                eventsArr.push(data);
+            });
+                return eventsArr;
+            });
+            console.log(grabEvent);
+            res.send(grabEvent)
             await browser.close() 
         } catch (err) {
             console.log(err)
