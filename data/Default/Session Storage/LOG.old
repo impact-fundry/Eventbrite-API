@@ -1,2 +1,3 @@
-2023/11/09-19:30:50.965 1770 Creating DB C:\Users\DELL\Desktop\API-Events\data\Default\Session Storage since it was missing.
-2023/11/09-19:30:51.054 1770 Reusing MANIFEST C:\Users\DELL\Desktop\API-Events\data\Default\Session Storage/MANIFEST-000001
+2023/11/16-21:47:53.590 5110 Reusing MANIFEST C:\Users\ABUBAKAR AMINU LAWWA\Desktop\ImpactFundryProjects\EventBrite API\Eventbrite-API\data\Default\Session Storage/MANIFEST-000001
+2023/11/16-21:47:53.597 5110 Recovering log #3
+2023/11/16-21:47:53.604 5110 Reusing old log C:\Users\ABUBAKAR AMINU LAWWA\Desktop\ImpactFundryProjects\EventBrite API\Eventbrite-API\data\Default\Session Storage/000003.log 

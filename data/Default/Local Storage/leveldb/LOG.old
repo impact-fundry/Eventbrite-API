@@ -1,2 +1,7 @@
-2023/11/09-19:30:46.988 1770 Creating DB C:\Users\DELL\Desktop\API-Events\data\Default\Local Storage\leveldb since it was missing.
-2023/11/09-19:30:47.085 1770 Reusing MANIFEST C:\Users\DELL\Desktop\API-Events\data\Default\Local Storage\leveldb/MANIFEST-000001
+2023/11/16-21:47:53.595 4d94 Reusing MANIFEST C:\Users\ABUBAKAR AMINU LAWWA\Desktop\ImpactFundryProjects\EventBrite API\Eventbrite-API\data\Default\Local Storage\leveldb/MANIFEST-000001
+2023/11/16-21:47:53.597 4d94 Recovering log #5
+2023/11/16-21:47:53.600 4d94 Level-0 table #7: started
+2023/11/16-21:47:53.648 4d94 Level-0 table #7: 63337 bytes OK
+2023/11/16-21:47:53.649 4d94 Recovering log #6
+2023/11/16-21:47:53.654 4d94 Reusing old log C:\Users\ABUBAKAR AMINU LAWWA\Desktop\ImpactFundryProjects\EventBrite API\Eventbrite-API\data\Default\Local Storage\leveldb/000006.log 
+2023/11/16-21:47:53.699 4d94 Delete type=0 #5
